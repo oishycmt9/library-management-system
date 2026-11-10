@@ -22,7 +22,7 @@ Route::apiResource('users', UserController::class);
 Route::get('/orders/{order}/returns', [OrderController::class, 'returns']);
 Route::post('/orders/{order}/returns', [OrderController::class, 'processReturn']);
 
-/*Login & Logout*/
+
 Route::prefix('auth')->group(function () {
     Route::post('/register', [AuthController::class, 'register']);
     Route::post('/login', [AuthController::class, 'login']);
@@ -33,7 +33,7 @@ Route::prefix('auth')->group(function () {
     });
 });
 
-/*User*/
+
 Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
