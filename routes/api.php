@@ -11,21 +11,14 @@ use App\Http\Controllers\Api\OrderController;
 use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\Api\AuthController;
 
-/*Category*/
+
 Route::apiResource('categories', CategoryController::class);
-/*Author*/
 Route::apiResource('authors', AuthorController::class);
-/*Publisher*/
 Route::apiResource('publishers', PublisherController::class);
-/*Books*/
 Route::apiResource('books', BookController::class);
-/*Borrowing*/
 Route::apiResource('borrowings', BorrowingController::class);
-/*Order*/
 Route::apiResource('orders', OrderController::class);
-/*Users*/
 Route::apiResource('users', UserController::class);
-// Order Return API
 Route::get('/orders/{order}/returns', [OrderController::class, 'returns']);
 Route::post('/orders/{order}/returns', [OrderController::class, 'processReturn']);
 
