@@ -25,6 +25,3 @@ A web-based Library Management System developed using Laravel 13.
 - CSS
 - JavaScript
 
-## Developer
-
-Library Management System – BSc in Computer Science and Engineering Project.
