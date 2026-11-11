@@ -13,7 +13,6 @@ A web-based Library Management System developed using Laravel 13.
 - Borrowing Management
 - Order Management
 - Payment Management
-- REST API
 - Book Stock Management
 
 ## Technologies Used
